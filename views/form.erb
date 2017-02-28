@@ -1,0 +1,26 @@
+<% if !@name %>
+<form method="post" action="/named-cat">
+
+  <div style="margin:top">
+    <label for="name">Name:<br></label>
+    <input type="text" id="name" name="name" value="Enter your name here">
+  </div>
+
+  <div style="clear:both; margin-top:10px">
+    <label width="100" for="age">Age:<br></label>
+    <input type="text" id="age" name="age" value="Enter your age here">
+  </div>
+
+  <div style="clear:both; margin-top: 10px">
+    <label width="100" for="gender">Gender:<br></label>
+    <input type="radio" id="gender" name="gender" value="Male">Male<br>
+    <input type="radio" id="gender" name="gender" value="Female">Female<br>
+    <input type="radio" id="gender" name="gender" value="Other">Other
+  </div>
+
+  <div style="margin-top: 10px">
+    <input type="submit" value="Submit">
+  </div>
+
+</form>
+<% end %>
